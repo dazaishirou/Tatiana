@@ -1,0 +1,343 @@
+body { background: #7C1E1E; display: flex; flex-wrap: wrap; justify-content: center; align-items: center;}
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@700&family=Roboto:ital,wght@0,400;0,700;1,400;1,700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@300;400;500;600;700&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
+:root {
+  --accentFont: Quicksand;
+  --mainFont: roboto;
+}
+
+.fire {
+  --mainColour: 222, 47, 85;
+  --accentColour: 255, 174, 95;
+  --border: 229, 182, 111;
+}
+
+.water {
+  --mainColour: 47, 151, 222;
+  --accentColour: 117, 114, 202;
+  --border: 0, 181, 231;
+}
+
+.earth {
+  --mainColour: 55, 135, 119;
+  --accentColour: 199, 177, 65;
+  --border: 105, 156, 68;
+}
+
+.air {
+  --mainColour: 131, 131, 195;
+  --accentColour: 222, 162, 188;
+  --border: 202, 134, 197;
+}
+
+.holy {
+  --mainColour: 92, 180, 228;
+  --accentColour: 242, 201, 113;
+  --border: 163, 215, 220;
+}
+
+.darkness {
+  --mainColour: 177, 60, 94;
+  --accentColour: 90, 80, 139 ;
+  --border: 201, 58, 103;
+}
+
+.group {
+    --mainColour: 73, 71, 69;
+  --accentColour: 169, 142, 126;
+  --border: 60, 52, 48;
+  
+}
+
+.harmonizeApp-container {
+  width: 700px;
+  margin: auto;
+  display: grid;
+  grid: auto / 200px auto;
+  font: 13px/1.5em var(--mainFont);
+  height: 370px;
+  overflow: hidden;
+  position: absolute;
+  border-radius: 10px;
+  top: 100px; 
+  left: px; 
+  transform: translate(﻿-50%, -50%);
+}
+
+.harmonizeApp-sidebar {
+  background: #FAFAFA;
+  border-radius: 0px;
+  padding: 47.5px;
+  position: relative;
+  z-index: 6;
+  border: 1px solid rgba(0,0,0,0.1);
+}
+
+.harmonizeApp-sidebar img {
+  width: 125px;
+  height: 125px;
+  border-radius: 20px;
+-webkit-box-shadow: 9px 9px 0px -1px rgba(var(--accentColour)); 
+box-shadow: 9px 9px 0px -1px rgba(var(--accentColour));
+}
+
+.harmonizeApp-sidebar ul {
+  list-style-type: none;
+  margin: 15px 0 0 0;
+  padding: 0;
+}
+
+.harmonizeApp-sidebar li {
+  border-bottom: 1px solid rgba(var(--mainColour), 0.2);
+  padding: 3px 0;
+}
+
+.harmonizeApp-body {
+  display: grid;
+  grid: auto repeat(3,325px) / 65px 70px 95px;
+  background: linear-gradient(rgb(var(--mainColour)),rgb(var(--accentColour)));
+  background-blend-mode: overlay;
+  padding: 15px 30px 15px 45px;
+  position: relative;
+  border-radius: 10px;
+  margin-left: -16px;
+  z-index: 4;
+  border-left: 0px;
+  overflow: hidden;
+}
+
+.harmonizeApp-bodybackground {
+  position: absolute;
+  background-size: cover;
+  width: 100%;
+  height: 100%;
+  z-index: -1;
+  border-radius: 20px;
+  mix-blend-mode: hard-light;
+  top: 1px;
+  left: 1px;
+  opacity: 0.3;
+}
+
+.harmonizeApp-body div[class*="harmonizeAppContent-"] {
+  transition: 0.5s ease;
+  position: absolute;
+  inset: 355px 0 0 45px;
+  width: 440px;
+  height: 310px;
+}
+
+.harmonizeAppContent-home {
+  display: grid;
+  grid: 57% 40% / 1fr;
+}
+
+.harmonizeAppContent-home h1 {
+  font: 55px roboto;
+  font-weight: 600
+  text-transform: uppercase;
+  position: relative; 1
+  z-index: 0;
+  margin: 100
+  place-self: end start;
+  color: #e9e9e9;
+  text-shadow: -1px 0 rgba(var(--border)), 0 px rgba(var(--border)), 4px 0 rgba(var(--border)), 0 -8px rgba(var(--border));
+}
+
+.harmonizeApp-claims {
+  display: flex;
+  list-style-type: none;
+  margin: -5px 0 0;
+  padding: 0;
+  width: 440px;
+  place-self: start;
+  flex-wrap: wrap;
+  color: #e9e9e9
+}
+
+.harmonizeApp-claims li {
+  margin-right: 10px;
+  padding-top: 5px;
+  border-bottom: 1px solid rgb(var(--accentColour));
+  font: 15px/1.5em var(--accentFont);
+  letter-spacing: 1px;
+}
+
+.harmonizeApp-frfrmBody {
+  margin: 20px 0 0;
+  background: #FAFAFA;
+  padding: 15px;
+  border-radius: 10px 10px 0 0;
+  height: 275px;
+}
+
+.harmonizeApp-scroll {
+  height: 270px;
+  overflow: auto;
+ line-height: 22px;
+ padding: 0px 25px 0px 25px;
+  text-align: justify;
+  color: #494949;
+  font: 13.5px var(--mainFont);
+}
+
+.harmonizeApp-scroll h1 {
+background: linear-gradient(to bottom, rgb(var(--mainColour)) 0%, rgb(var(--accentColour)) 100%);
+-webkit-background-clip: text;
+-webkit-text-fill-color: transparent;
+ padding: 0px;
+    font-size: 20px;
+    font-weight: 400;
+  line-height: 25px;
+  opacity: 0.80;
+  margin: 2px;
+}
+
+.harmonizeApp-scroll hr {
+  height: 1px;
+    border: none;
+    margin: 15px 0px;
+    background: #d3d3d3;
+}
+
+.harmonizeApp-scroll b {
+  color: rgba(var(--mainColour), 0.80);
+    text-shadow: 1px 1px #fff, 1px -1px #fff, -1px 1px #fff, -1px -1px #fff;
+}
+
+.harmonizeApp-scroll::-webkit-scrollbar {
+  width: 7px;
+}
+
+.harmonizeApp-scroll::-webkit-scrollbar-track {
+  background: transparent;
+}
+
+.harmonizeApp-scroll::-webkit-scrollbar-thumb {
+  background: linear-gradient(rgb(var(--mainColour)),rgb(var(--accentColour)));
+  border-radius: 10px;
+}
+
+.harmonizeAppContent-hrmnz {
+  padding-top: 25px;
+  display: grid;
+  grid: auto / 1fr 1fr 1fr;
+  gap: 15px;
+  place-items: start;
+  height: 285px!important;
+  overflow: auto;
+}
+
+.har-Notes {
+margin-left: 5px;
+padding-left: 10px;
+border-left: 1px solid #d2d2d2;
+}
+
+
+.harmonizeAppContent-hrmnz h2 {
+  margin: -25px 0 0 15px;
+  padding: 0;
+  font-size: 12px;
+  line-height: 1em;
+  position: relative;
+  z-index: 4;
+  width: 75%;
+  text-shadow: rgb(255, 255, 255) 2px 0px 0px, rgb(255, 255, 255) 1.75517px 0.958851px 0px, rgb(255, 255, 255) 1.0806px 1.68294px 0px, rgb(255, 255, 255) 0.141474px 1.99499px 0px, rgb(255, 255, 255) -0.832294px 1.81859px 0px, rgb(255, 255, 255) -1.60229px 1.19694px 0px, rgb(255, 255, 255) -1.97998px 0.28224px 0px, rgb(255, 255, 255) -1.87291px -0.701566px 0px, rgb(255, 255, 255) -1.30729px -1.5136px 0px, rgb(255, 255, 255) -0.421592px -1.95506px 0px, rgb(255, 255, 255) 0.567324px -1.91785px 0px, rgb(255, 255, 255) 1.41734px -1.41108px 0px, rgb(255, 255, 255) 1.92034px -0.558831px 0px;
+}
+
+div[class*="-harmonizeChar"] {
+  background: #fafafa;
+  border-radius: 100%;
+  padding: 10px;
+  height: 135px;
+}
+
+div[class*="-harCircle"] {
+  position: relative;
+  width: 125px;
+  height: 125px;
+  background: #fafafa;
+  border-radius: 100%;
+  padding: 5px;
+}
+
+.harmonizeApp-harCircle img {
+   position: absolute;
+  width: 85px;
+  height: 85px;
+  border-radius: 100%;
+  top: 25px;
+  right: 25px;
+  z-index: 1;
+  filter: grayscale(20%);
+}
+
+.harmonizeRank {
+  width: 125px;
+  height: 125px;
+  border-radius: 100%;
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.rankOne {
+  background: conic-gradient(rgba(var(--mainColour)) 5%, rgba(var(--accentColour)) 20%, #fafafa 0);
+}
+
+.rankTwo {
+  background: conic-gradient(rgba(var(--mainColour)) 15%, rgba(var(--accentColour)) 40%, #fafafa 0);
+}
+
+.rankThree {
+  background: conic-gradient(rgba(var(--mainColour)) 15%, rgba(var(--accentColour)) 60%, #fafafa 0);
+}
+
+.rankFour {
+ background: conic-gradient(rgba(var(--mainColour)) 15%, rgba(var(--accentColour)) 80%, #fafafa 0);
+}
+
+.rankFive {
+  background: linear-gradient(rgba(var(--mainColour)) 15%, rgba(var(--accentColour)) 100%, #fafafa 0);
+}
+
+
+.rankOne:after, .rankTwo:after, .rankThree:after, .rankFour:after, .rankFive:after {
+  content: "";
+  display: block;
+  width: 90px;
+  height: 90px;
+  background: rgb(var(--accentColour));
+  border-radius: 100%;
+  display: flex;
+  align-items: end;
+  font: 15px/1.5em var(--accentFont);
+}
+
+.harmonizeApp-body input[type=radio] {
+  display: none;
+}
+
+.harmonizeApp-body input[type=radio]+label {
+  position: relative;
+  background: rgb(var(--accentColour));
+  color: #000;
+  font-weight: 900;
+  padding: 7px 10px 7px;
+  display: inline-block;
+  margin-right: 10px;
+  border-radius: 10px;
+  font-family: var(--accentFont);
+  line-height: 1em;
+  transition: 0.5s ease;
+  cursor: pointer;
+}
+
+#hApp-Thome:checked ~ div[class*="AppContent-home"], 
+#hApp-Tfrfrm:checked ~ div[class*="AppContent-frfrm"], 
+#hApp-Thrmnz:checked ~ div[class*="AppContent-hrmnz"] {
+  inset: 30px 0px 0px 45px;
+}
